@@ -30,13 +30,16 @@
         {
             btnSendRequest = new Button();
             txtResult = new TextBox();
+            txtHost = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnSendRequest
             // 
-            btnSendRequest.Location = new Point(12, 12);
+            btnSendRequest.Location = new Point(10, 9);
+            btnSendRequest.Margin = new Padding(3, 2, 3, 2);
             btnSendRequest.Name = "btnSendRequest";
-            btnSendRequest.Size = new Size(776, 29);
+            btnSendRequest.Size = new Size(679, 22);
             btnSendRequest.TabIndex = 0;
             btnSendRequest.Text = "Send Request";
             btnSendRequest.UseVisualStyleBackColor = true;
@@ -44,21 +47,42 @@
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(12, 47);
+            txtResult.Location = new Point(9, 64);
+            txtResult.Margin = new Padding(3, 2, 3, 2);
             txtResult.Multiline = true;
             txtResult.Name = "txtResult";
             txtResult.ReadOnly = true;
             txtResult.ScrollBars = ScrollBars.Vertical;
-            txtResult.Size = new Size(776, 391);
+            txtResult.Size = new Size(680, 332);
             txtResult.TabIndex = 1;
+            // 
+            // txtHost
+            // 
+            txtHost.Location = new Point(56, 36);
+            txtHost.Name = "txtHost";
+            txtHost.PlaceholderText = "Адреса сайта";
+            txtHost.Size = new Size(632, 23);
+            txtHost.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 44);
+            label1.Name = "label1";
+            label1.Size = new Size(32, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Host";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 407);
+            Controls.Add(label1);
+            Controls.Add(txtHost);
             Controls.Add(txtResult);
             Controls.Add(btnSendRequest);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -69,5 +93,7 @@
 
         private Button btnSendRequest;
         private TextBox txtResult;
+        private TextBox txtHost;
+        private Label label1;
     }
 }
