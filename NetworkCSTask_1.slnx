@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="ClienHTTPApp/ClienHTTPApp.csproj" Id="a80ab748-1d51-4cec-a773-5648d32fee67" />
-  <Project Path="ServerHTTPApp/ServerHTTPApp.csproj" Id="e9029caf-e82a-4a41-8d2f-cf61816770c1" />
+  <Project Path="WinFormsClient/WinFormsClient.csproj" Id="63959d5e-a049-4e07-bdce-aeb2838ee1be" />
 </Solution>
